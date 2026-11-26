@@ -1,0 +1,34 @@
+# The Writing & projects section.
+# essays: optional list of posts shown under a project.
+
+- title: In Motion
+  url: https://ramyara.substack.com
+  text: My Substack on living a high-velocity life and building a life you choose.
+  essays:
+    - title: We need to talk about somatic offloading
+      url: https://ramyara.substack.com/p/we-need-to-talk-about-somatic-offloading
+    - title: On living a high-velocity life
+      url: https://ramyara.substack.com/p/on-living-a-high-velocity-life
+    - title: Musings on connection
+      url: https://ramyara.substack.com/p/musings-on-connection
+    - title: Ten Learnings from Ten Days of Silence
+      url: https://ramyara.substack.com/p/ten-learnings-from-ten-days-of-silence
+    - title: There has literally never been a better time to be a generalist
+      url: https://ramyara.substack.com/p/there-has-literally-never-been-a
+    - title: My love affair with SF is actually just a dance with billionaires
+      url: https://ramyara.substack.com/p/my-love-affair-with-sf-is-actually
+    - title: Am I? Am AI?
+      url: https://ramyara.substack.com/p/am-i-am-ai
+
+- title: tAIstemakers
+  url: https://taistemakers.substack.com/p/introducing-taistemakers
+  text: A co-authored newsletter on how AI is reshaping cognition, taste, and judgment.
+  image: taistemakers-01.jpg
+
+- title: Interlock
+  url: https://interlock-ai.vercel.app
+  text: An interactive map I built of the money and relationships behind AI power.
+  image: interlock-01.jpg
+  essays:
+    - title: "Background: Who's actually in the AI group chat?"
+      url: https://ramyara.substack.com/p/whos-actually-in-the-ai-group-chat

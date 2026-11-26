@@ -1,0 +1,186 @@
+# Every dot on the map. Add a new dot by copying one block and changing it.
+#
+# id:      a short unique name, no spaces
+# title:   what shows next to the dot
+# buckets: one or more bucket ids from buckets.yml (more than one = it sits between them)
+# kind:    the small grey line under the title (role, year, publication)
+# text:    the story. Links look like [text](https://...)
+# photos:  optional. Files live in assets/photos/. Caption is optional.
+# x, y:    optional. Where the dot sits (map is 1000 x 640). Leave them out and the site places it for you.
+# label:   optional. Where the title sits next to the dot: right (default), left, above, below, below-left, below-right
+
+- id: interlock
+  title: Interlock
+  buckets: [tech]
+  kind: Built · 2026
+  text: "An interactive map of the money and relationships behind AI power. [Open Interlock](https://interlock-ai.vercel.app) or read the backstory: [Who's actually in the AI group chat?](https://ramyara.substack.com/p/whos-actually-in-the-ai-group-chat)"
+  photos:
+    - file: interlock-01.jpg
+  x: 80
+  y: 85
+
+- id: taistemakers
+  title: tAIstemakers
+  buckets: [tech]
+  kind: Co-authored newsletter
+  text: "How AI is reshaping cognition, taste, and judgment. [Read the introduction](https://taistemakers.substack.com/p/introducing-taistemakers)"
+  photos:
+    - file: taistemakers-01.jpg
+  x: 60
+  y: 250
+  label: below-right
+
+- id: ocha
+  title: UN OCHA · Humanitarian Data
+  buckets: [tech, impact]
+  kind: Data science & policy · 2018–2019
+  text: "With the [Centre for Humanitarian Data](https://centre.humdata.org/), explored how AI, blockchain, and open data could support humanitarian response."
+  photos:
+    - file: ocha-01.jpg
+      caption: United Nations, New York
+  x: 95
+  y: 370
+
+- id: datakind
+  title: DataKind × San José
+  buckets: [tech, impact]
+  kind: Data advisor
+  text: "Piloted a data equity framework for local government with the City of San José, published at [EAAMO '21](https://dl.acm.org/doi/10.1145/3465416.3483290)."
+  x: 150
+  y: 560
+
+- id: atih
+  title: All Tech Is Human panel
+  buckets: [tech, impact, community]
+  kind: Convened · SF Tech Week 2024
+  text: "A cross-sector panel on the future of responsible AI with [All Tech Is Human](https://alltechishuman.org/). 200+ attendees, APCO's largest West Coast event to date."
+  photos:
+    - file: atih-01.jpg
+      caption: SF Tech Week 2024
+  x: 500
+  y: 455
+  label: below
+
+- id: apco
+  title: APCO Impact
+  buckets: [impact]
+  kind: Senior Associate Director · 2021–2026
+  text: "Core member building [APCO Impact](https://apcoworldwide.com/blog/launch-of-apco-impact-deepens-the-firms-integrated-approach-to-tackling-critical-societal-challenges/), the firm's social impact and sustainability practice. Advised corporations, nonprofits, and foundations, shaping $500M+ in capital."
+  photos:
+    - file: apco-01.jpg
+    - file: apco-02.jpg
+  x: 335
+  y: 605
+
+- id: acterra
+  title: Acterra board
+  buckets: [impact, community]
+  kind: Board of directors · 2024–2026
+  text: "[Acterra](https://www.acterra.org/) is a Bay Area climate nonprofit with a 55+ year legacy and a fiscal sponsorship model that helps local communities build climate resilience."
+  x: 520
+  y: 585
+
+- id: peaks
+  title: Hiking
+  buckets: [explore]
+  kind: Outdoors
+  text: "A journey into backpacking, from Half Dome and the John Muir Wilderness to Alaska, with two 14,000+ ft summits so far: one in Colombia's Los Nevados and Mount Whitney (14,505 ft), hiked overnight. More in [Into the wild](https://ramyara.substack.com/p/into-the-wild)."
+  photos:
+    - file: peaks-01.jpg
+      caption: Los Nevados, Colombia
+    - file: peaks-02.jpg
+      caption: John Muir Wilderness
+    - file: peaks-03.jpg
+      caption: Mount Whitney, a night hike
+    - file: peaks-04.jpg
+      caption: Half Dome
+    - file: peaks-05.jpg
+      caption: Alaska
+  x: 895
+  y: 80
+  label: below-left
+
+- id: silence
+  title: Ten days of silence
+  buckets: [explore]
+  kind: In Motion
+  text: "A 10-day silent meditation retreat, and what it taught: [Ten Learnings from Ten Days of Silence](https://ramyara.substack.com/p/ten-learnings-from-ten-days-of-silence)."
+  x: 660
+  y: 45
+
+- id: power
+  title: Power
+  buckets: [explore]
+  kind: In Motion
+  text: "Essays on who holds power: [Who's actually in the AI group chat?](https://ramyara.substack.com/p/whos-actually-in-the-ai-group-chat) and [My love affair with SF is actually just a dance with billionaires](https://ramyara.substack.com/p/my-love-affair-with-sf-is-actually)."
+  x: 555
+  y: 110
+
+- id: photography
+  title: Photography
+  buckets: [explore]
+  kind: Behind the camera
+  text: "Places, light, and people, mostly found on the trail and in new cities. More in [Through my lens](#photos)."
+  photos:
+    - file: gallery-01.jpg
+  x: 935
+  y: 245
+  label: below-left
+
+- id: lse
+  title: LSE · behavioral science
+  buckets: [explore]
+  kind: Executive MSc · in progress
+  text: "Behavioral science at the [London School of Economics](https://www.lse.ac.uk/study-at-lse/graduate/executive-msc-behavioural-science), the lens on everything else here."
+  photos:
+    - file: lse-01.jpg
+  x: 640
+  y: 215
+
+- id: inmotion
+  title: In Motion
+  buckets: [explore, community]
+  kind: My Substack
+  text: "On living a high-velocity life and building a life you choose. Start with [On living a high-velocity life](https://ramyara.substack.com/p/on-living-a-high-velocity-life) or [Giving myself permission to not know](https://ramyara.substack.com/p/giving-myself-permission-to-not-know). [All posts](https://ramyara.substack.com)"
+  x: 860
+  y: 350
+
+- id: london
+  title: Building community in London
+  buckets: [community]
+  kind: In Motion
+  text: "Trying every little thing to build connection in a new city: [Musings on connection](https://ramyara.substack.com/p/musings-on-connection)."
+  x: 640
+  y: 410
+
+- id: whimsy
+  title: San Francisco's whimsy
+  buckets: [community]
+  kind: In Motion
+  text: "[Extra, extra, read all about it! San Francisco's Whimsy is BACK.](https://ramyara.substack.com/p/extra-extra-read-all-about-it-san)"
+  x: 930
+  y: 420
+  label: below-left
+
+- id: gatherings
+  title: Hosting gatherings
+  buckets: [community]
+  kind: Host
+  text: "Bringing the right people around a table, like the Orange You Glad dinner party."
+  photos:
+    - file: community-02.jpg
+      caption: Orange You Glad dinner party
+    - file: community-01.jpg
+  x: 650
+  y: 540
+
+- id: bookclub
+  title: Book club · 50 books
+  buckets: [community]
+  kind: Community
+  text: "Five friends of a decade. Started during COVID, recently read their 50th book together."
+  photos:
+    - file: bookclub-01.jpg
+  x: 900
+  y: 600
+  label: left

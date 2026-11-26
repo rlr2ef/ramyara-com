@@ -1,0 +1,22 @@
+# Your name, headline, and contact details.
+# Wrap a word in *asterisks* to make it green and italic.
+# Links use [text](https://...) and work in every text field.
+
+name: Ramya Ravichandran
+headline: "Strategist and operator connecting people and ideas across *tech*, *social impact*, and *community*. Always exploring."
+portrait: portrait-01.jpg
+
+now:
+  - "I'm looking for a full-time, in-person generalist role (strategy/ops, partnerships, programs, and/or events) at a mission-driven, later-stage startup or VC firm with global reach. I've spent 8+ years working across the UN, Fortune 100 companies, nonprofits, and foundations, and I'm known for connecting and empowering people."
+  - "I'm finishing an LSE master's in behavioral science and moving my base to NYC in early 2027."
+  - "If something comes to mind, or you think I should chat with someone, I'd love to hear from you [here](mailto:ramya.r813@gmail.com)."
+
+whats_next:
+  - "I'll be in Paris, London, and Davos in January. Please reach out if we'll cross paths."
+
+map_intro: "Here's a map of me."
+map_hint: Click a category to explore.
+
+email: ramya.r813@gmail.com
+linkedin: https://www.linkedin.com/in/ramya-ra/
+substack: https://ramyara.substack.com

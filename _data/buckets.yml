@@ -1,0 +1,27 @@
+# The four buckets on the map.
+# id: a short name the dots use to point at this bucket (no spaces).
+# x, y: where the bucket sits on the map. The map is 1000 wide and 640 tall; Ramya sits at 500, 300.
+
+- id: tech
+  name: Responsible tech & AI
+  blurb: Building, writing about, and advising on technology that serves people.
+  x: 230
+  y: 165
+
+- id: explore
+  name: Exploration
+  blurb: "Physical summits and inner ones: the trail, the cushion, the classroom, and the camera."
+  x: 770
+  y: 165
+
+- id: impact
+  name: Social impact
+  blurb: Strategy and partnerships with foundations, nonprofits, and companies' social impact teams.
+  x: 270
+  y: 490
+
+- id: community
+  name: Community & connection
+  blurb: Bringing people together, online and around a table.
+  x: 730
+  y: 490

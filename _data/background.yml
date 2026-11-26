@@ -1,0 +1,90 @@
+# The Background tab, as chapters (newest first).
+#
+# years:     the dates shown on the left
+# name:      the chapter's short name under the dates
+# highlight: true gives the chapter a soft green background
+# logo:      optional logo file in assets/logos/, shown above the heading
+# heading:   the main thing in this chapter (shown when there's no logo, or under it)
+# role:      one italic line under the heading
+# points:    bullet points. Links look like [text](https://...)
+# alongside: what ran in parallel. Each has text, when, and an optional logo.
+
+chapters:
+  - years: 2027 →
+    name: What's next
+    heading: Next full-time role, New York
+    role: From early 2027
+    points:
+      - "A full-time, in-person generalist role (strategy/ops, partnerships, programs, and/or events) at a mission-driven, later-stage startup or VC firm with global reach."
+      - "In Paris, London, and Davos in January. Please reach out if we'll cross paths."
+    alongside:
+      - text: Finishing the LSE MSc in Behavioural Science
+        when: expected Dec 2027
+        logo: lse.png
+
+  - years: May 2026 – now
+    name: Independent chapter
+    highlight: true
+    heading: Independent strategist and operator
+    role: An intentional sabbatical and portfolio season after nearly five years at APCO
+    points:
+      - "Writing: [In Motion](https://ramyara.substack.com) and the co-authored [tAIstemakers](https://taistemakers.substack.com/p/introducing-taistemakers)."
+      - "Building: [Interlock](https://interlock-ai.vercel.app), a map of the money and people shaping AI power ([backstory](https://ramyara.substack.com/p/whos-actually-in-the-ai-group-chat)), plus personal AI workflows."
+      - "Go-to-market: first GTM hire for a stealth AI startup, building its GTM engine from 0 to 1 with 200+ contacts."
+      - "Coaching: behavioral science decision sprints that help leaders make high-stakes strategic decisions."
+      - "As of November 2026, looking for my next full-time role."
+    alongside:
+      - text: Began the LSE MSc in Behavioural Science
+        when: Sept 2026
+        logo: lse.png
+      - text: "All Tech Is Human: helped with their SXSW London mixer, then co-hosted the first ATIHx San Francisco gathering"
+        when: May and Sept 2026
+      - text: Acterra board, Governance Committee Chair. Authored the board's AI policy.
+        when: through Dec 2026
+        logo: acterra.png
+
+  - years: 2021 – 2026
+    name: Strategy & partnerships at scale
+    logo: apco.svg
+    heading: APCO
+    role: Senior Associate Director, Impact & Technology
+    points:
+      - "Deputy lead of the philanthropy and nonprofit practice and leader of the San Francisco office; seconded to London for 4 months to build the team. Promoted 3x in 4.5 years."
+      - "Core member building [APCO Impact](https://apcoworldwide.com/blog/launch-of-apco-impact-deepens-the-firms-integrated-approach-to-tackling-critical-societal-challenges/): social impact strategy, programs, and partnerships for corporations, foundations, and nonprofits."
+      - "The firm's AI advocate: AI fluency trainings for 40+ colleagues, and a 200+ person responsible AI panel at SF Tech Week 2024."
+    alongside:
+      - text: "Designed the SF Tech Week responsible AI panel with [All Tech Is Human](https://alltechishuman.org/), the start of an ongoing partnership"
+        when: June 2024
+      - text: Joined the [Acterra](https://www.acterra.org/) board
+        when: "2024"
+        logo: acterra.png
+      - text: Certificate in Social Impact Partnerships
+        when: Nov 2023
+        logo: georgetown.png
+
+  - years: 2019 – 2021
+    name: Data at scale
+    logo: ey.png
+    heading: Ernst & Young
+    role: Consultant, Digital, Data & Analytics
+    points:
+      - "AI/ML-driven analysis for Fortune 100 clients, influencing content reaching 10M+ users."
+    alongside:
+      - text: "Pro bono with DataKind: a data equity framework for the City of San José, published at [EAAMO '21](https://dl.acm.org/doi/10.1145/3465416.3483290)"
+        when: 2020 – 2021
+        logo: datakind.png
+
+  - years: 2016 – 2019
+    name: Data and policy
+    logo: un-ocha.png
+    heading: United Nations OCHA
+    role: Data Science and Policy Consultant
+    points:
+      - "With the [Centre for Humanitarian Data](https://centre.humdata.org/), explored AI, blockchain, and open data in humanitarian response."
+      - "Before that: Innovation Programming Fellow at the Tom Tom Foundation, organizing a Youth Summit for a 20,000+ person festival."
+    alongside:
+      - text: "UVA: BA in Computer Science, then a Master of Public Policy"
+        when: 2018, 2019
+        logo: uva.png
+      - text: Study abroad, Budapest
+        when: summer 2017

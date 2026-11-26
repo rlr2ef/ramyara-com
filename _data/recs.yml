@@ -1,0 +1,34 @@
+# Recommendations. Add new ones to the top of a list.
+# note is one line on why it's worth someone's time.
+
+read:
+  - title: The Art of Gathering
+    url: https://www.priyaparker.com/the-art-of-gathering
+    by: Priya Parker · book
+    note: How to bring people together with real purpose, from dinners to conferences.
+  - title: When Breath Becomes Air
+    url: https://en.wikipedia.org/wiki/When_Breath_Becomes_Air
+    by: Paul Kalanithi · book
+    note: A neurosurgeon's memoir about what makes a life worth living, written as he faced terminal cancer.
+  - title: "Four Thousand Weeks: Time Management for Mortals"
+    url: https://www.oliverburkeman.com/fourthousandweeks
+    by: Oliver Burkeman · book
+    note: An average life is about four thousand weeks long. How to spend them well.
+  - title: The Humanist Review of AI
+    url: https://humanistreview.ai/
+    by: A quarterly publication
+    note: Thinkers from different fields on AI's impact on society.
+  - title: "The fallacy of choice: Technological pluralism as a path to real equity"
+    url: https://www.alliancemagazine.org/blog/the-fallacy-of-choice-technological-pluralism-as-a-path-to-real-equity/
+    by: Nina da Hora, Alliance Magazine
+    note: Why philanthropy should fund non-digital knowledge systems as real technology.
+
+watch:
+  - title: Astro Teller's Meaning of Life
+    url: https://www.astroteller.net/talks/astro-tellers-meaning-of-life
+    by: Astro Teller, via the Wall Street Journal
+    note: How he found meaning, and what AI means for what makes humans valuable.
+  - title: Reclaiming our Humanity in the Age of AI
+    url: https://www.youtube.com/watch?v=I1tJnM81NCM
+    by: SXSW panel, 2026
+    note: Shaping AI so people benefit from it, rather than having it done to them.

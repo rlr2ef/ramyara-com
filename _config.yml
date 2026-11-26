@@ -1,0 +1,4 @@
+# Site settings for GitHub Pages (Jekyll). You shouldn't need to change this file.
+title: Ramya Ravichandran
+exclude:
+  - README.md

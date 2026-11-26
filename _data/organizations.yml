@@ -1,0 +1,29 @@
+# Organizations shown when someone clicks a bucket.
+# buckets: which bucket(s) each one appears under (use the bucket ids from buckets.yml).
+
+- name: Cadence Giving Foundation
+  buckets: [tech, impact]
+- name: Synopsys Foundation
+  buckets: [tech, impact]
+- name: Internet Society
+  buckets: [tech, impact]
+- name: Expedia Group
+  buckets: [tech, impact]
+- name: Spotify
+  buckets: [tech, impact]
+- name: ByteDance
+  buckets: [tech, impact]
+- name: Autodesk Foundation
+  buckets: [tech, impact]
+- name: San Francisco Foundation
+  buckets: [impact]
+- name: PolicyLink
+  buckets: [impact]
+- name: BlackRock Foundation
+  buckets: [impact]
+- name: UPS Foundation
+  buckets: [impact]
+- name: Mastercard Foundation
+  buckets: [impact]
+- name: Nike
+  buckets: [impact]

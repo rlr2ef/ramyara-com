@@ -1,0 +1,9 @@
+# Photos in the "Through my lens" tab, in the order shown.
+# Put the file in assets/photos/ first. Add "  caption: words" under a file to show a caption.
+
+- file: gallery-01.jpg
+- file: gallery-02.jpg
+- file: gallery-03.jpg
+- file: gallery-04.jpg
+- file: gallery-05.jpg
+- file: peaks-05.jpg
