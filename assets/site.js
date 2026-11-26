@@ -47,10 +47,10 @@
   if (P.map_hint) $("map-hint").textContent = P.map_hint;
 
   var hi = [];
-  if (P.email) hi.push('<a class="email" href="mailto:' + esc(P.email) + '">' + esc(P.email) + "</a>");
+  if (P.email) hi.push('<a href="mailto:' + esc(P.email) + '" title="' + esc(P.email) + '">Email</a>');
   if (P.linkedin) hi.push('<a href="' + esc(P.linkedin) + '" target="_blank" rel="noopener">LinkedIn</a>');
-  if (P.substack) hi.push('<a href="' + esc(P.substack) + '" target="_blank" rel="noopener">In Motion on Substack</a>');
-  $("hi").innerHTML = hi.join("");
+  if (P.substack) hi.push('<a href="' + esc(P.substack) + '" target="_blank" rel="noopener">Substack</a>');
+  $("hi").innerHTML = hi.join('<span class="sep" aria-hidden="true">|</span>');
 
   /* ---------- writing ---------- */
   $("writing").innerHTML = (DATA.writing || []).map(function (w) {
@@ -161,15 +161,80 @@
     (d.buckets || []).forEach(function (bid) {
       var b = bucketById[bid];
       if (!b) return;
-      edgeEls.push(el("path", { "class": "edge", d: "M" + b.x + " " + b.y + " L" + d.x + " " + d.y, "data-hub": bid }, gE));
+      var ed = el("path", { "class": "edge", d: "M" + b.x + " " + b.y + " L" + d.x + " " + d.y, "data-hub": bid, "data-dot": d.id }, gE);
+      ed._hub = b; ed._dot = d;
+      edgeEls.push(ed);
     });
     var g = el("g", { "class": "node", tabindex: "0", role: "button", "aria-pressed": "false", "aria-label": d.title, "data-id": d.id, "data-hubs": (d.buckets || []).join(" ") }, gN);
     el("circle", { cx: d.x, cy: d.y, r: 7.5 }, g);
     var lp = labelPos(d);
     var t = el("text", { x: lp.x, y: lp.y, "text-anchor": lp.a }, g);
     t.textContent = d.title;
+    g._dot = d;
     nodeEls.push(g);
   });
+
+  /* ---------- map: motion ---------- */
+  var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  // Hover or focus a dot to light up its connections.
+  function hoverOn(g) {
+    var id = g.getAttribute("data-id"), hubs = g.getAttribute("data-hubs").split(" ");
+    svg.classList.add("hovering");
+    nodeEls.forEach(function (n) { n.classList.toggle("hl", n === g); });
+    edgeEls.forEach(function (e) { e.classList.toggle("hl", e.getAttribute("data-dot") === id); });
+    gH.querySelectorAll(".hub").forEach(function (h) { h.classList.toggle("hl", hubs.indexOf(h.getAttribute("data-hub")) > -1); });
+  }
+  function hoverOff() {
+    svg.classList.remove("hovering");
+    svg.querySelectorAll(".hl").forEach(function (n) { n.classList.remove("hl"); });
+  }
+  nodeEls.forEach(function (g) {
+    g.addEventListener("mouseenter", function () { hoverOn(g); });
+    g.addEventListener("mouseleave", hoverOff);
+    g.addEventListener("focus", function () { hoverOn(g); });
+    g.addEventListener("blur", hoverOff);
+  });
+  if (!reduceMotion) {
+    // Draw the lines in, then let the dots drift gently.
+    svg.classList.add("intro");
+    svg.querySelectorAll(".spoke, .edge").forEach(function (p, i) {
+      var len = p.getTotalLength ? p.getTotalLength() : 400;
+      p.style.strokeDasharray = len; p.style.strokeDashoffset = len;
+      p.style.transition = "stroke-dashoffset 0.9s ease " + (0.05 + i * 0.025) + "s";
+    });
+    nodeEls.forEach(function (g, i) { g.style.transitionDelay = (0.35 + i * 0.04) + "s"; });
+    requestAnimationFrame(function () { requestAnimationFrame(function () {
+      svg.classList.remove("intro");
+      svg.querySelectorAll(".spoke, .edge").forEach(function (p) { p.style.strokeDashoffset = 0; });
+      setTimeout(function () {
+        svg.querySelectorAll(".spoke, .edge").forEach(function (p) { p.style.strokeDasharray = ""; p.style.strokeDashoffset = ""; p.style.transition = ""; });
+        nodeEls.forEach(function (g) { g.style.transitionDelay = ""; });
+        startDrift();
+      }, 2200);
+    }); });
+  }
+  function startDrift() {
+    var phase = nodeEls.map(function (_, i) { return i * 1.7; });
+    var t0 = performance.now();
+    function frame(now) {
+      if (!document.hidden && !svg.closest(".view").hidden) {
+        var t = (now - t0) / 1000;
+        nodeEls.forEach(function (g, i) {
+          var dx = Math.sin(t * 0.5 + phase[i]) * 3, dy = Math.cos(t * 0.4 + phase[i] * 1.3) * 3;
+          g._dx = dx; g._dy = dy;
+          g.setAttribute("transform", "translate(" + dx.toFixed(2) + " " + dy.toFixed(2) + ")");
+        });
+        var byId = {};
+        nodeEls.forEach(function (g) { byId[g.getAttribute("data-id")] = g; });
+        edgeEls.forEach(function (e) {
+          var g = byId[e._dot.id];
+          e.setAttribute("d", "M" + e._hub.x + " " + e._hub.y + " L" + (e._dot.x + (g._dx || 0)).toFixed(2) + " " + (e._dot.y + (g._dy || 0)).toFixed(2));
+        });
+      }
+      requestAnimationFrame(frame);
+    }
+    requestAnimationFrame(frame);
+  }
 
   /* ---------- detail panel ---------- */
   var detail = $("detail"), card = $("card"), mainImg = $("main-photo"), cap = $("photo-cap"), thumbs = $("thumbs");
