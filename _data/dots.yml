@@ -50,7 +50,7 @@
   y: 560
 
 - id: atih
-  title: All Tech Is Human panel
+  title: Responsible AI panel
   buckets: [tech, impact, community]
   kind: Convened · SF Tech Week 2024
   text: "A cross-sector panel on the future of responsible AI with [All Tech Is Human](https://alltechishuman.org/). 200+ attendees, APCO's largest West Coast event to date."
@@ -141,7 +141,7 @@
   title: In Motion
   buckets: [explore, community]
   kind: My Substack
-  text: "On living a high-velocity life and building a life you choose. Start with [On living a high-velocity life](https://ramyara.substack.com/p/on-living-a-high-velocity-life) or [Giving myself permission to not know](https://ramyara.substack.com/p/giving-myself-permission-to-not-know). [All posts](https://ramyara.substack.com)"
+  text: "My written playground: essays on AI, the body, community, and building a life you choose. Start with [On living a high-velocity life](https://ramyara.substack.com/p/on-living-a-high-velocity-life) or [Giving myself permission to not know](https://ramyara.substack.com/p/giving-myself-permission-to-not-know). [All posts](https://ramyara.substack.com)"
   x: 860
   y: 350
 
@@ -166,7 +166,7 @@
   title: Hosting gatherings
   buckets: [community]
   kind: Host
-  text: "Bringing the right people together: a fruit-themed dinner party series (like the Orange You Glad dinner party), and co-hosting the first ATIHx San Francisco gathering with [All Tech Is Human](https://alltechishuman.org/)."
+  text: "Bringing the right people together: a fruit-themed dinner party series (like the Orange You Glad dinner party), a 200+ person responsible AI panel at SF Tech Week, and co-hosting the first ATIHx San Francisco gathering with [All Tech Is Human](https://alltechishuman.org/)."
   photos:
     - file: community-02.jpg
       caption: Orange You Glad dinner party

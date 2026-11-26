@@ -23,12 +23,13 @@ read:
     by: Nina da Hora, Alliance Magazine
     note: Why philanthropy should fund non-digital knowledge systems as real technology.
 
-watch:
-  - title: Astro Teller's Meaning of Life
-    url: https://www.astroteller.net/talks/astro-tellers-meaning-of-life
-    by: Astro Teller, via the Wall Street Journal
-    note: How he found meaning, and what AI means for what makes humans valuable.
-  - title: Reclaiming our Humanity in the Age of AI
-    url: https://www.youtube.com/watch?v=I1tJnM81NCM
-    by: SXSW panel, 2026
-    note: Shaping AI so people benefit from it, rather than having it done to them.
+# "Watch & listen" is switched off for now. To bring it back, remove the "# " at the start of each line below.
+# watch:
+#   - title: Astro Teller's Meaning of Life
+#     url: https://www.astroteller.net/talks/astro-tellers-meaning-of-life
+#     by: Astro Teller, via the Wall Street Journal
+#     note: How he found meaning, and what AI means for what makes humans valuable.
+#   - title: Reclaiming our Humanity in the Age of AI
+#     url: https://www.youtube.com/watch?v=I1tJnM81NCM
+#     by: SXSW panel, 2026
+#     note: Shaping AI so people benefit from it, rather than having it done to them.
