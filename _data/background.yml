@@ -14,9 +14,6 @@ chapters:
     name: What's next
     heading: Next full-time role, New York
     role: From early 2027
-    points:
-      - "A full-time, in-person generalist role (strategy/ops, partnerships, programs, and/or events) at a mission-driven, later-stage startup or VC firm with global reach."
-      - "In Paris, London, and Davos in January. Let me know if we'll cross paths."
     alongside:
       - text: Finishing the LSE MSc in Behavioural Science
         when: expected Dec 2027
@@ -30,7 +27,7 @@ chapters:
     points:
       - "Writing: [In Motion](https://ramyara.substack.com) and the co-authored [tAIstemakers](https://taistemakers.substack.com/p/introducing-taistemakers)."
       - "Building: [Interlock](https://interlock-ai.vercel.app), a map of the money and people shaping AI power ([backstory](https://ramyara.substack.com/p/whos-actually-in-the-ai-group-chat)), plus personal AI workflows."
-      - "Go-to-market: first GTM hire for a stealth AI startup, building its GTM engine from 0 to 1 with 200+ contacts."
+      - "GTM for stealth AI startup."
       - "Gathering: co-hosted the first All Tech Is Human x San Francisco gathering, and helped with their SXSW London mixer."
       - "Coaching: behavioral science decision sprints that help leaders make high-stakes strategic decisions."
       - "As of November 2026, looking for my next full-time role."
@@ -71,14 +68,14 @@ chapters:
         when: 2020 – 2021
         logo: datakind.png
 
-  - years: 2016 – 2019
+  - years: 2018 – 2019
     name: Data and policy
     logo: un-ocha.png
     heading: United Nations OCHA
     role: Data Science and Policy Consultant
     points:
       - "With the [Centre for Humanitarian Data](https://centre.humdata.org/), explored AI, blockchain, and open data in humanitarian response."
-      - "Before that: Innovation Programming Fellow at the Tom Tom Foundation, organizing a Youth Summit for a 20,000+ person festival."
+      - "Before that (2016–2017): Innovation Programming Fellow at the Tom Tom Foundation, organizing a Youth Summit for a 20,000+ person festival."
     alongside:
       - text: "UVA: BA in Computer Science, then a Master of Public Policy"
         when: 2018, 2019

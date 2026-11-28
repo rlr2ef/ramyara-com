@@ -40,6 +40,7 @@
   /* ---------- hero, now, what's next ---------- */
   if (P.headline) $("headline").innerHTML = md(P.headline);
   if (P.belief) $("belief").innerHTML = md(P.belief); else $("belief").hidden = true;
+  if (P.focus) $("focus").innerHTML = md(P.focus); else $("focus").hidden = true;
   if (P.portrait) { var pi = $("portrait"); pi.src = photoSrc(P.portrait); pi.alt = P.name || "Portrait"; } else $("portrait").hidden = true;
   function paras(list) { return (list || []).map(function (t) { return "<p>" + md(t) + "</p>"; }).join(""); }
   $("now-text").innerHTML = paras(P.now);
